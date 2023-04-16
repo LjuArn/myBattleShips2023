@@ -7,19 +7,19 @@ import org.hibernate.validator.constraints.Length;
 
 public class UserRegisterBindingModel {
 
-    @NotBlank(message = "username can not be empty")
+    @NotBlank(message = "")
     @Size(min = 3, max = 10, message = "Username length must be between 3 and 10 characters")
     private String username;
 
-    @NotBlank(message = "email can not be empty")
+    @NotBlank(message = "")
     @Length(min = 5, max = 20, message = "Full name length must be between 5 and 20 characters")
     private String fullName;
 
-    @Email
-    @NotBlank(message = "email can not be empty")
+    @Email(message = "Enter valid email address.")
+    @NotBlank(message = "Enter valid email address.")
     private String email;
 
-    @NotBlank(message = "password can not be empty")
+    @NotBlank(message = "")
     @Size(min = 3, message = "Password length must be more than 3 characters")
     private String password;
 

@@ -13,10 +13,10 @@ public class ShipEntity extends BaseEntity {
     private String name;
     @Column(nullable = false)
     @Positive
-    private Long health;
+    private long health;
     @Column(nullable = false)
     @Positive
-    private Long power;
+    private long power;
     @Column(nullable = false)
     private LocalDate created;
 
@@ -40,20 +40,20 @@ public class ShipEntity extends BaseEntity {
         return this;
     }
 
-    public Long getHealth() {
+    public long getHealth() {
         return health;
     }
 
-    public ShipEntity setHealth(Long health) {
+    public ShipEntity setHealth(long health) {
         this.health = health;
         return this;
     }
 
-    public Long getPower() {
+    public long getPower() {
         return power;
     }
 
-    public ShipEntity setPower(Long power) {
+    public ShipEntity setPower(long power) {
         this.power = power;
         return this;
     }
